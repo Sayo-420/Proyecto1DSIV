@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Forma De Pago (Con Bootstrap)</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid">
+      <div class="Nav1">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CINES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CARTELERA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">PREGUNTAS FRECUENTES</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <nav class="navbar navbar-expand-lg" style="background-color: #63432E;">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="img\LOGO.png" width="100" height="100" class="d-inline-block align-top" alt="Logo"
+              style="background: transparent; border: none;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <form class="d-flex mx-auto">
+              <div class="input-group" style="background-color: #D9D9D9; border-radius: 25px; padding: 5px;">
+                <input class="form-control" type="search" placeholder="Buscar película" aria-label="Search"
+                  style="background-color: #D9D9D9; border: none;">
+                <button class="btn" type="button" id="search-button">
+                  <img src="https://cdn.pixabay.com/photo/2021/10/11/00/59/search-6699087_960_720.png" alt="Buscar"
+                    width="30" height="30">
+                </button>
+              </div>
+            </form>
+            <div class="btn-group ms-auto">
+              <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img src="https://cdn-icons-png.flaticon.com/512/3364/3364044.png" alt="Usuario" width="30" height="30"
+                  style="margin-right: 5px;"> Mi Cuenta
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">usuario 1</a>
+                <a class="dropdown-item" href="#">usuario 2</a>
+                <a class="dropdown-item" href="#">usuario 3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <br>
+  <div class="Pasos">
+    <nav class="nav nav-pills nav-justified">
+      <a class="nav-link" href="#">PASO 1 <br> Seleccione sus boletos</a>
+      <a class="nav-link" href="#">PASO 2 <br> Seleccione sus asientos</a>
+      <a class="nav-link border border-secondary text-light" aria-current="page" href="#">PASO 3 <br> Forma de Pago</a>
+    </nav>
+  </div>  
+  <br>
+  <div class="countdown">
+    <h4>Tiempo de compra</h4>
+    <br>
+    <div id="minutes">00</div>
+    <div id="seconds">00</div>
+  </div>
+  <br>
+  <div class="container text-center">
+    <br>
+    <div class="row">
+      <div class="col">
+        <h3>INFORMACIÓN PERSONAL</h3>
+        <div class="form-floating mb-3">
+          <h5>Nombre</h5>
+          <input type="name" class="form-control" id="floatingInput" placeholder="Name">
+        </div>
+        <div class="form-floating mb-3">
+          <h5>Apellido</h5>
+          <input type="lname" class="form-control" id="floatingInput" placeholder="Lname">
+        </div>
+        <div class="form-floating mb-3">
+          <h5>Tarjeta Club Filmania</h5>
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        </div>
+        <div class="form-floating mb-3">
+          <h5>Correo Electrónico</h5>
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        </div>
+      </div>
+      <div class="col">
+        <h3>DATOS DE LA TARJETA</h3>
+        <div class="form-floating mb-3">
+          <h5>Número de la tarjeta</h5>
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        </div>
+
+        <h5>Fecha Expiración</h5>
+        <div class="input-group mb-3">
+          <span class="input-group-text">Expiración</span>
+          <input type="text" aria-label="FECHA" class="form-control">
+          <input type="text" aria-label="CW" class="form-control">
+        </div>
+        <br>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            He leído y acepto los<p style="color: aqua;">Términos y condiciones & Avisos de de Privacidad</p>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="Btn">
+    <button type="button" class="btn btn-light btn-lg">ATRÁS</button>
+    <button type="button" class="btn btn-light btn-lg custom-btn">PAGAR</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous">
+  </script>
+  <script src="main.js"> </script>
+</body>
+</html>

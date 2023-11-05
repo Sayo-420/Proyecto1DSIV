@@ -1,0 +1,102 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+body {
+    background: linear-gradient(to bottom, #431B19, #351918, #261716);
+}
+
+.container-fluid {
+    text-align: center;
+}
+
+.container-fluid img {
+    display: inline-block;
+}
+
+.Nav1{
+    background-color: black;
+}
+
+.nav-itemA{
+    color: aliceblue;
+}
+
+.nav-link{
+    color: rgba(255, 255, 255, 0.608);
+    text-align: center;
+}
+
+.navbar{
+    background-color:#735E3F;
+}
+
+.row h3{
+    background-color:#9c6d4663;
+    border-radius: 25px;
+}
+
+.row h5{
+    text-align: left;
+}
+
+.custom-border {
+    border: 1px solid #9C6D46; /* Color del marco */
+    border-radius: 5px; /* Bordes redondeados (ajusta según lo desees) */
+}
+  
+.btn-group ms-auto{
+    color: aliceblue;
+}
+
+.col{
+    color: aliceblue;
+}
+
+.form-check{
+    color: aliceblue;
+    text-align: start;
+}
+
+.custom-btn {
+    background-color: #9C6D46;
+    color: white; /* Cambia el color del texto para que sea legible */
+  }
+  
+
+.Btn{
+    text-align: center;
+}
+
+/*RELOJ*/
+
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+  }
+  
+  .countdown {
+    background-color: #9c6d4665;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .countdown div {
+    text-align: center;
+    margin: 5px;
+    font-size: 2rem;
+    padding: 10px;
+    background-color: #342417;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .countdown h4{
+    color: #f2f2f2;
+  }
+  
