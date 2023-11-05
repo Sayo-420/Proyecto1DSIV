@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/da2008d449.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--HEADER-->
+    <header class="">
+        <!--PRIMERA BARRA NEGRA-->
+        <!--solo se ve para pc, en cel esta oculto-->
+        <div class="max-sm:hidden">
+            <div class="">
+                <a href="">Inicio</a>
+                <a href="">Cines</a>
+                <a href="">Carteleras</a>
+                <a href="">Preguntas Frecuentes</a>
+            </div>
+        </div>
+        <!--BARRA CHOCOLATE-->
+        <div class="flex justify-between items-center bg-gradient-to-b from-[rgba(104,74,49,1)] via-[rgba(126,89,58,1)] to-[rgba(128,90,59,1)] h-[100%]">
+            <!--MENU HAM-->
+            <div class="sm:hidden">
+                <i class="fa-solid fa-bars text-gray-500 text-base"></i>
+            </div>
+            <!--LOGO-->
+            <div class="">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/logo.png" alt="" class="w-8">
+            </div>
+            <!--BUSQUEDA PELICULA-->
+            <div class="relative">
+                <div class="flex items-center">
+                    <input type="text" placeholder="Busca tu pelicula..." class="rounded-lg">
+                    <i class="fa-solid fa-magnifying-glass text-black absolute"></i>
+                </div>
+            </div>
+            <!--USUARIO-->
+            <div class="">
+                <i class="fa-solid fa-circle-user text-gray-300"></i>
+                <p class="max-sm:hidden">User name</p>
+                <i class="max-sm:hidden fa-solid fa-chevron-down text-black"></i>
+            </div>
+        </div>
+        <!--SEGUNDA BARRA NEGRA-->
+        <div class="bg-black ">
+            <div class="">
+                <!--BUSQUEDA PROVINCIA-->
+                <div class="">
+                    <input type="text" placeholder="Provincia"
+                        class="">
+                    <i
+                        class=""></i>
+                </div>
+                <!--BUSQUEDA CINE-->
+                <div class="relative">
+                    <input type="text" placeholder="Cine"
+                        class="">
+                    <i
+                        class=""></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="h-96 overflow-hidden relative max-sm:h-56">
+        <div class="h-full">
+            <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="block w-full h-full object-cover" id="car1img">
+            <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="hidden w-full h-full object-cover" id="car2img">
+            <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="hidden w-full h-full object-cover" id="car3img">
+            <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="hidden w-full h-full object-cover" id="car4img">
+            <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="hidden w-full h-full object-cover" id="car5img">
+        </div>
+        <div class="absolute z-10 bottom-0 left-1/2 -translate-x-1/2">
+            <input type="radio" name="car" id="car1rad" checked onclick="img1cambio()">
+            <input type="radio" name="car" id="car2rad" onclick="img2cambio()">
+            <input type="radio" name="car" id="car3rad" onclick="img3cambio()">
+            <input type="radio" name="car" id="car4rad" onclick="img4cambio()">
+            <input type="radio" name="car" id="car5rad" onclick="img5cambio()">
+        </div>
+        <div class="absolute z-20 left-0 top-1/2 -translate-y-1/2 cursor-pointer" onclick="atras()">
+            <i class="fa-solid fa-caret-left text-5xl text-gray-400"></i>
+        </div>
+        <div class="absolute z-20 right-0 top-1/2 -translate-y-1/2 cursor-pointer" onclick="siguiente()">
+            <i class="fa-solid fa-caret-right text-5xl text-gray-400"></i>
+        </div>
+    </section>
+    <script src="/PantallaDeInicio/Tailwind/src/index.js"></script>
+</body>
+
+</html>
