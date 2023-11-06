@@ -66,8 +66,9 @@
             </div>
         </div>
     </header>
-
+    <!--SECCION 1 - CARRUSEL DE PROMOCIONES-->
     <section class="h-96 overflow-hidden relative max-sm:h-56">
+        <!--imagenes-->
         <div class="h-full">
             <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="block w-full h-full object-cover" id="car1img">
             <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="hidden w-full h-full object-cover" id="car2img">
@@ -75,6 +76,7 @@
             <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="hidden w-full h-full object-cover" id="car4img">
             <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="hidden w-full h-full object-cover" id="car5img">
         </div>
+        <!--botones radio-->
         <div class="absolute z-10 bottom-0 left-1/2 -translate-x-1/2">
             <input type="radio" name="car" id="car1rad" checked onclick="img1cambio()">
             <input type="radio" name="car" id="car2rad" onclick="img2cambio()">
@@ -82,11 +84,43 @@
             <input type="radio" name="car" id="car4rad" onclick="img4cambio()">
             <input type="radio" name="car" id="car5rad" onclick="img5cambio()">
         </div>
+        <!--botones de adelante y atras-->
         <div class="absolute z-20 left-0 top-1/2 -translate-y-1/2 cursor-pointer" onclick="atras()">
             <i class="fa-solid fa-caret-left text-5xl text-gray-400"></i>
         </div>
         <div class="absolute z-20 right-0 top-1/2 -translate-y-1/2 cursor-pointer" onclick="siguiente()">
             <i class="fa-solid fa-caret-right text-5xl text-gray-400"></i>
+        </div>
+    </section>
+
+    <!--SECCION 2 - CARRUSEL DE TRENDING-->
+    <section class="pt-10 h-96 max-sm:h-56">
+        <div class="flex justify-center">
+            <h2 class="border text-white bg-[#89613E] px-5 py-1 font-bold rounded-lg">Trending</h2>
+        </div>
+        <div class="flex justify-center relative">
+            <div id="scroll"class="flex overflow-x-hidden pt-5 max-w-full w-4/5">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28">
+            </div>
+            <div class="absolute z-20 left-20 top-1/2 -translate-y-1/2 cursor-pointer max-sm:left-0" onclick="scrollIzq()">
+                <i class="fa-solid fa-caret-left text-5xl text-gray-400 focus:outline-none"></i>
+            </div>
+            <div class="absolute z-20 right-20 top-1/2 -translate-y-1/2 cursor-pointer max-sm:right-0" onclick="scrollDer()">
+                <i class="fa-solid fa-caret-right text-5xl text-gray-400 focus:outline-none"></i>
+            </div>
+            <div class="bg-gray-200 h-72 w-12 absolute z-10 left-[67px] top-[53%] -translate-y-1/2 rounded-lg cursor-pointer max-sm:h-52 max-sm:w-8 max-sm:left-0 max-sm:top-[55%] focus:outline-none" onclick="scrollIzq()"></div>
+            <div class="bg-gray-200 h-72 w-12 absolute z-10 right-[67px] top-[53%] -translate-y-1/2 rounded-lg cursor-pointer max-sm:h-52 max-sm:w-8 max-sm:right-0 max-sm:top-[55%] focus:outline-none" onclick="scrollDer()"></div>
         </div>
     </section>
     <script src="/PantallaDeInicio/Tailwind/src/index.js"></script>
