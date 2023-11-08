@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./css/tailwind.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Pantalla de Inicio de Sesión</title>
+</head>
+<style>
+    #background-image {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body class="bg-cover bg-center h-screen">
+  <img id="background-image" src="./assets/fondo.png" alt="Fondo" />
+  <div class="h-full flex flex-col justify-center items-center">
+    <div class="p-8 rounded-lg shadow-lg text-center">
+      <img src="./assets/logo.png" alt="Logo" class="w-33 h-32 mx-auto mx-auto rounded-full mb-4">
+      <form class="bg-transparent">
+        <div class="mb-4">
+          <label for="email" class="text-black"></label>
+          <input type="email" id="email" class="w-64 h-15 border border-gray-300 rounded-lg focus:outline-none bg-white p-2" placeholder="Correo Electrónico">
+        </div>
+        <div class="mb-4">
+          <label for="password" class="text-black"></label>
+          <input type="password" id="password" class="w-64 border border-gray-300 rounded-lg focus:outline-none bg-white p-2" placeholder="Contraseña">
+        </div>
+        <p class="text-center text-white mb-4"><a href="#">¿Has olvidado tu contraseña?</a></p>
+        <button class="w-64 py-3 rounded-full bg-white text-black mx-auto">Iniciar Sesión</button>
+      </form>
+      <div class="mt-10">
+        <p class="text-center text-white mb-3"><a href="#">¿No te has registrado?</a></p>
+        <button class="w-64 py-3 rounded-full bg-white text-black mx-auto">Registrarse</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+1- iniciar
+npm init -y  
+
+2- intalar
+npm install -D tailwindcss
+
+3- crear archivo
+npx tailwindcss init
+
+4
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+5 -crear tailwin.css en la carpeta css
+pegar:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+6- Ir a package.json y añadir al script 
+"tailDev": "npx tailwindcss -i ./src/tailwind.css -o ./dist/tailwindcss.css --watch"
+
+7- colocar en el html
+ <link href="./css/tailwind.css" >
+
+8- terminal para iniciar el proyecto
+npm run tailDev
+
+9- CTRL + C para finalizar el proyecto 
