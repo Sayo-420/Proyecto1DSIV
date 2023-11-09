@@ -11,70 +11,50 @@
 
 <body class="bg-radial-gradient at-[50.02% 52.33%] from-[#431B19] via-[#431B19] to-[#141414]">
     <!--HEADER-->
-    <header class="">
-        <!--PRIMERA BARRA NEGRA-->
-        <!--solo se ve para pc, en cel esta oculto-->
-        <div class="max-sm:hidden">
-            <div class="">
-                <a href="">Inicio</a>
-                <a href="">Cines</a>
-                <a href="">Carteleras</a>
-                <a href="">Preguntas Frecuentes</a>
+    <header>
+        <!--nav principal-->
+        <nav class="bg-black">
+            <ul class="flex justify-end">
+                <li><a href="#" class="text-white mr-16 text-xl">Inicio</a></li>
+                <li><a href="#" class="text-white mr-16 text-xl">Cines</a></li>
+                <li><a href="#" class="text-white mr-16 text-xl">Cartelera</a></li>
+                <li><a href="#" class="text-white mr-36 text-xl">Preguntas Frecuentes</a></li>
+            </ul>
+        </nav>
+        <!--seccion del logo-->
+        <section class="bg-gradient-to-b from-[#9C6D46] to-[#684A31] flex justify-between pl-5 pr-5 items-center">
+            <img src="/PantallaDeInicio/Tailwind/src/imagenes/logo.png" alt="" class="w-auto h-12">
+            <div class="search-container flex items-center relative w-80 h-20">
+                <input type="text" placeholder="  Busca tu Pelicula" class="bg-[rgba(247,246,245,0.53)] placeholder:text-black rounded-[20px] w-full pt-1 pb-1">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/magnifying-glass-solid.svg" class="w-6 absolute right-4" >
             </div>
-        </div>
-        <!--BARRA CHOCOLATE-->
-        <div class="flex justify-between items-center bg-gradient-to-b from-[rgba(104,74,49,1)] via-[rgba(126,89,58,1)] to-[rgba(128,90,59,1)] h-[100%]">
-            <!--MENU HAM-->
-            <div class="sm:hidden">
-                <i class="fa-solid fa-bars text-gray-500 text-base"></i>
+            <div class="user-container flex items-center relative w-44 h-20">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/user-solid.svg" class="w-auto h-6" alt="">
+                <p>User name</p>
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/caret-down-solid.svg" class="w-4 absolute right-12" >
             </div>
-            <!--LOGO-->
-            <div class="">
-                <img src="/PantallaDeInicio/Tailwind/src/imagenes/logo.png" alt="" class="w-8">
+        </section>
+        <!--seccion de ubicacion-->
+        <section class="bg-black flex justify-center gap-20">
+            <div class="search-container flex items-center relative w-80 h-20">
+            <input type="text" placeholder="Provincia" class="bg-[rgba(247,246,245,0.53)] placeholder:text-black text-center rounded-[20px] w-full pt-1 pb-1">
+            <img src="/PantallaDeInicio/Tailwind/src/imagenes/caret-down-solid.svg" class="w-4 absolute right-4" >
             </div>
-            <!--BUSQUEDA PELICULA-->
-            <div class="relative">
-                <div class="flex items-center">
-                    <input type="text" placeholder="Busca tu pelicula..." class="rounded-lg">
-                    <i class="fa-solid fa-magnifying-glass text-black absolute"></i>
-                </div>
+            <div class="search-container flex items-center relative w-80 h-20">
+                <input type="text" placeholder="Cine" class="bg-[rgba(247,246,245,0.53)] placeholder:text-black text-center rounded-[20px] w-full pt-1 pb-1">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/caret-down-solid.svg" class="w-4 absolute right-4" >
             </div>
-            <!--USUARIO-->
-            <div class="">
-                <i class="fa-solid fa-circle-user text-gray-300"></i>
-                <p class="max-sm:hidden">User name</p>
-                <i class="max-sm:hidden fa-solid fa-chevron-down text-black"></i>
-            </div>
-        </div>
-        <!--SEGUNDA BARRA NEGRA-->
-        <div class="bg-black ">
-            <div class="">
-                <!--BUSQUEDA PROVINCIA-->
-                <div class="">
-                    <input type="text" placeholder="Provincia"
-                        class="">
-                    <i
-                        class=""></i>
-                </div>
-                <!--BUSQUEDA CINE-->
-                <div class="relative">
-                    <input type="text" placeholder="Cine"
-                        class="">
-                    <i
-                        class=""></i>
-                </div>
-            </div>
-        </div>
-    </header>
+        </section>
+    </header>
     <!--SECCION 1 - CARRUSEL DE PROMOCIONES-->
     <section class="h-96 overflow-hidden relative max-sm:h-56">
         <!--imagenes-->
         <div class="h-full">
             <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="block w-full h-full object-cover" id="car1img">
             <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="hidden w-full h-full object-cover" id="car2img">
-            <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="hidden w-full h-full object-cover" id="car3img">
-            <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="hidden w-full h-full object-cover" id="car4img">
-            <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="hidden w-full h-full object-cover" id="car5img">
+            <img src="/PantallaDeInicio/Tailwind/src/imagenes/avenger.jpg" alt="" class="hidden w-full h-full object-cover" id="car3img">
+            <img src="/PantallaDeInicio/Tailwind/src/imagenes/hobbit.jpg" alt="" class="hidden w-full h-full object-cover" id="car4img">
+            <img src="/PantallaDeInicio/Tailwind/src/imagenes/finest hours.jpg" alt="" class="hidden w-full h-full object-cover" id="car5img">
         </div>
         <!--botones radio-->
         <div class="absolute z-10 bottom-0 left-1/2 -translate-x-1/2">
@@ -103,16 +83,16 @@
             <div id="scroll"class="flex overflow-x-hidden pt-5 max-w-full w-4/5">
                 <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
                 <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
-                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
-                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
-                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
-                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
-                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
-                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
-                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
-                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
-                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
-                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/65.jpg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/avatar.jpeg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/avenger.jpg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/finest hours.jpg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/fnaf.jpeg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/elemental.jpeg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/wakanda.cms" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/popeye.jfif" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/opepenheimer.jpeg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/hobbit.jpg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 max-sm:w-28 rounded-lg">
             </div>
             <!--botones-->
             <div class="absolute z-20 left-20 top-1/2 -translate-y-1/2 cursor-pointer max-sm:left-0" onclick="scrollIzq()">
@@ -135,8 +115,8 @@
         <div class="flex justify-center pt-10">
             <div class="grid grid-cols-4 max-w-full w-4/5 max-sm:grid-cols-2 max-sm:gap-3">
                 <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 rounded-lg max-sm:w-52 max-sm:mr-3  max-sm:mb-3">
-                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 rounded-lg max-sm:w-52 max-sm:mb-3">
-                <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel1.png" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 rounded-lg max-sm:w-52 max-sm:mr-3  max-sm:mb-3">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/fnaf.jpeg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 rounded-lg max-sm:w-52 max-sm:mb-3">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/wakanda.cms" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 rounded-lg max-sm:w-52 max-sm:mr-3  max-sm:mb-3">
                 <img src="/PantallaDeInicio/Tailwind/src/imagenes/carrusel2.jpg" alt="" class="mr-3 h-72 w-64 object-cover max-sm:h-52 rounded-lg max-sm:w-52 max-sm:mb-3">
             </div>
         </div>
@@ -146,7 +126,7 @@
         </div>
     </section>
     <!--SECCION 4 - PROMOCIONES-->
-    <section class="p-16 h-96 max-sm:h-56 max-sm:pt-[30rem]">
+    <section class="p-16 h-96 max-sm:h-56 max-sm:pt-[30rem] pb-[30rem]">
         <div class="flex justify-center pt-28">
             <div class="grid grid-cols-2 max-w-full w-11/12 gap-20 max-sm:grid-cols-1 max-sm:gap-3">
                 <!--promocion 1-->
@@ -178,6 +158,36 @@
             </div>
         </div>
     </section>
+
+    <footer class="bg-gradient-to-b from-[#9C6D46] to-[#684A31] py-5 pr-40 pl-40 flex justify-between">
+        <div id="container-left" class="grid grid-cols-[repeat(2,300px)] gap-0 text-xl">
+            <div class="search-container flex items-center">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/circle-question-regular.svg" class="w-4 mr-3" >
+                <a href="#" class="text-white">Preguntas Frecuentes</a>
+            </div>
+            <div class="search-container flex items-center">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/file-shield-solid.svg" class="w-4 mr-3" >
+                <a href="#" class="text-white">Politicas de la Empresa</a>
+            </div>
+            <div class="search-container flex items-center">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/circle-question-regular.svg" class="w-4 mr-3" >
+                <a href="#" class="text-white">Atencion al Cliente</a>
+            </div>
+            <div class="search-container flex items-center">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/user-solid.svg" class="w-4 mr-3" >
+                <a href="#" class="text-white">Creadores de la página</a>
+            </div>
+            <div class="search-container flex items-center">
+                <img src="/PantallaDeInicio/Tailwind/src/imagenes/user-shield-solid.svg" class="w-4 mr-3" >
+                <a href="#" class="text-white">Politicas de Privacidad</a>
+            </div>  
+        </div>
+        <div id="container-right" class="flex w-[120px]  justify-between"> 
+            <img src="/PantallaDeInicio/Tailwind/src/imagenes/fblogo.png" class="w-8 h-8" >
+            <img src="/PantallaDeInicio/Tailwind/src/imagenes/insta.png" class="w-8 h-8" >
+            <img src="/PantallaDeInicio/Tailwind/src/imagenes/tiktok.png" class="w-8 h-8" >
+        </div>
+    </footer>
     <script src="/PantallaDeInicio/Tailwind/src/index.js"></script>
 </body>
 
