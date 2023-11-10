@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.image-list{
+   scrollbar-width: none;
+}
+
+.image-list::-webkit-scrollbar{
+    display: none;
+}
+
+#prev-slide{
+    display: none;
+}
