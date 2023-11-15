@@ -1,0 +1,30 @@
+body { 
+    background: radial-gradient(86.94% 47.67% at 50.02% 52.33%, #431B19 35.42%, #141414 73.96%);
+}
+
+.container-fluid {
+    text-align: center;
+}
+
+.container-fluid img {
+    display: inline-block;
+}
+
+.Nav1{
+    background-color: black;
+}
+
+.nav-link{
+    color: rgba(255, 255, 255, 0.608);
+    text-align: center;
+}
+
+.navbar{
+    background-color:#735E3F;
+}
+
+.navbar-toggler{
+    border-color: #f2f2f2;
+    color: #f2f2f27b;
+    background-color: #f2f2f2;
+}
